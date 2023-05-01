@@ -27,9 +27,14 @@ body{
   background-color:#0a0903;
 }
 
-span, a{
+a{
   font-family: "Poppins-Black";
   color:#fbe094;
+}
+
+span{
+  color:#fbe094;
+  font-family: "Poppins-Bold";
 }
 
 h1,h3{

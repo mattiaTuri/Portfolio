@@ -4,7 +4,7 @@ import DesktopMenu from "./DesktopMenu";
 
 function Navbar() {
   return (
-    <header className="fixed w-full">
+    <header className="fixed w-full z-10">
       <HamburgerMenu />
       <DesktopMenu />
     </header>

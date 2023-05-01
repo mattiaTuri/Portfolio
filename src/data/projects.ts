@@ -9,21 +9,21 @@ export const projects: Project[] = [
     {
         id: "journal",
         title: "World Jounal",
-        subtitle: "",
+        subtitle: "A clone of the New York Times",
         img: worldjournal,
         imgPosition: "center"
     },
     {
         id: "coin-market",
         title: "Coin market",
-        subtitle: "",
+        subtitle: "Cryptocurrency live market",
         img: coinmarket,
         imgPosition: "center 30%"
     },
     {
         id: "league-of-legends",
         title: "League of legends",
-        subtitle: "",
+        subtitle: "The universe of the most famous MOBA",
         img: leagueoflegends,
         imgPosition: "center 20%"
     },

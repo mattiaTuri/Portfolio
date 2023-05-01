@@ -6,14 +6,12 @@ function Works() {
   return (
     <Container>
       <div className="w-full p-8">
-        <div>
-          <h1>WORKS</h1>
+        <div className="border-b border-[#faa916] max-w-max">
+          <h1>01 - WORKS</h1>
         </div>
-        <div className="pt-40">
-          {projects.map((project) => {
-            return <ImageContainer key={project.id} project={project} />;
-          })}
-        </div>
+        {projects.map((project) => {
+          return <ImageContainer key={project.id} project={project} />;
+        })}
       </div>
     </Container>
   );
