@@ -1,0 +1,21 @@
+.navLink::before{
+    content: attr(data-link);
+    position: absolute;
+    top:-100%;
+    color:white;
+}
+
+.activeMenu{
+    left:0 !important;
+}
+
+.button{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: 0.3s ease;
+    color:white;
+    z-index:10;
+}

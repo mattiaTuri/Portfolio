@@ -1,12 +1,16 @@
-import { Container } from "postcss";
 import HamburgerMenu from "./HamburgerMenu";
 import DesktopMenu from "./DesktopMenu";
+import Container from "@/components/shared/Container";
 
 function Navbar() {
   return (
     <header className="fixed w-full z-10">
-      <HamburgerMenu />
-      <DesktopMenu />
+      <Container>
+        <nav className="flex p-8 justify-end w-full">
+          <HamburgerMenu />
+          <DesktopMenu />
+        </nav>
+      </Container>
     </header>
   );
 }
