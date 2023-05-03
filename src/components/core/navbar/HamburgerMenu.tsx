@@ -12,10 +12,12 @@ function HamburgerMenu() {
   return (
       <div className="md:hidden">
         <button
-        className={style.button}
+        className={`${style.button} ${openMenu && style.buttonAnim}`}
         onClick={() => openHamburgerMenu()}
       >    
-      menu
+      <span className={`${style.line} ${openMenu && style.firstLineAnim}`}></span>
+      <span className={`${style.line} ${openMenu && style.secondLineAnim}`}></span>
+      <span className={`${style.line} ${openMenu && style.thirdLineAnim}`}></span>
       </button>
       <div className={`absolute top-0 left-[-100%] w-screen h-screen text-[#C3A06A] flex flex-col bg-[#000000f1] justify-center items-center duration-500 ${openMenu && style.activeMenu}`}>
         <Link
