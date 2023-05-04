@@ -5,12 +5,8 @@ import Container from "@/components/shared/Container";
 function Navbar() {
   return (
     <header className="fixed w-full z-10">
-      <Container>
-        <nav className="flex p-8 justify-end w-full">
-          <HamburgerMenu />
-          <DesktopMenu />
-        </nav>
-      </Container>
+      <HamburgerMenu />
+      <DesktopMenu />
     </header>
   );
 }

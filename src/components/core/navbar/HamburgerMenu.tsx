@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
-import style from "./navbar.module.css"
+import style from "./navbar.module.css";
+import Container from "@/components/shared/Container";
 
 function HamburgerMenu() {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
@@ -10,45 +11,44 @@ function HamburgerMenu() {
   };
 
   return (
-      <div className="md:hidden">
-        <button
-        className={`${style.button} ${openMenu && style.buttonAnim}`}
-        onClick={() => openHamburgerMenu()}
-      >    
-      <span className={`${style.line} ${openMenu && style.firstLineAnim}`}></span>
-      <span className={`${style.line} ${openMenu && style.secondLineAnim}`}></span>
-      <span className={`${style.line} ${openMenu && style.thirdLineAnim}`}></span>
-      </button>
-      <div className={`absolute top-0 left-[-100%] w-screen h-screen text-[#C3A06A] flex flex-col bg-[#000000f1] justify-center items-center duration-500 ${openMenu && style.activeMenu}`}>
-        <Link
-            href="/"
-            className="text-2xl"
-            onClick={() => setOpenMenu(false)}
+    <div className="md:hidden">
+      <Container>
+        <nav className="flex p-8 justify-end w-full">
+          <button
+            className={`${style.button} ${openMenu && style.buttonAnim}`}
+            onClick={() => openHamburgerMenu()}
           >
-            HOME
-          </Link>
-          <Link
-            href="/"
-            className="text-2xl"
-            onClick={() => setOpenMenu(false)}
-          >
-            WORKS
-          </Link>
-          <Link
-            href="/"
-            className="text-2xl"
-            onClick={() => setOpenMenu(false)}
-          >
-            ABOUT ME
-          </Link>
-          <Link href="/"
-            className="text-2xl"
-            onClick={() => setOpenMenu(false)}
-          >
-            CONTACTS
-          </Link>
-        </div>
+            <span
+              className={`${style.line} ${openMenu && style.firstLineAnim}`}
+            ></span>
+            <span
+              className={`${style.line} ${openMenu && style.secondLineAnim}`}
+            ></span>
+            <span
+              className={`${style.line} ${openMenu && style.thirdLineAnim}`}
+            ></span>
+          </button>
+        </nav>
+      </Container>
+      <div
+        className={`absolute top-0 left-[-100%] w-screen h-screen text-[#C3A06A] flex flex-col bg-[#000000f1] justify-center items-center duration-500 ${
+          openMenu && style.activeMenu
+        }`}
+      >
+        <Link href="/" className="text-2xl" onClick={() => setOpenMenu(false)}>
+          HOME
+        </Link>
+        <Link href="/" className="text-2xl" onClick={() => setOpenMenu(false)}>
+          WORKS
+        </Link>
+        <Link href="/" className="text-2xl" onClick={() => setOpenMenu(false)}>
+          ABOUT ME
+        </Link>
+        <Link href="/" className="text-2xl" onClick={() => setOpenMenu(false)}>
+          CONTACTS
+        </Link>
       </div>
+    </div>
   );
 }
 

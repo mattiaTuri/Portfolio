@@ -2,23 +2,28 @@ import Container from "../shared/Container";
 
 function StartPage() {
   return (
-    <Container>
-      <div className="h-screen w-full flex flex-col justify-center items-center p-8">
-        {/* <div className="w-[250px] md:w-[400px] lg:w-[600px] flex flex-col">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl">CREATIVE</h1>
-          <h1 className="text-3xl md:text-5xl lg:text-7xl text-end">
-            DEVELOPER
-          </h1>
+    <div className="h-screen">
+      <Container>
+        <div className="h-full w-full p-8 flex flex-col justify-center items-center relative">
+          <div className="flex flex-col items-center">
+            <span className="w-full text-sm lg:text-base text-center md:text-start">
+              Turina Mattia
+            </span>
+            <h1 className="text-3xl md:text-6xl lg:text-8xl">FRONT-END</h1>
+            <h1 className="text-3xl md:text-6xl lg:text-8xl md:text-end">
+              DEVELOPER
+            </h1>
+          </div>
+          <div className="relative top-10 w-[50%] ">
+            <p className="text-sm lg:text-base text-center">
+              I'm a software developer, based in Verona, Italy. I'm appassionate
+              about the front-end with a focus on the world of graphics and
+              animation
+            </p>
+          </div>
         </div>
-        <div className="relative top-10 md:w-[400px]">
-          <h2>
-            I'm a software developer, based in Verona, Italy. I'm appassionate
-            about the front-end and in particular the world of graphics and
-            animations,
-          </h2>
-        </div> */}
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 }
 
