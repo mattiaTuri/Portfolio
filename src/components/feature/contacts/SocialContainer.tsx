@@ -12,7 +12,7 @@ function SocialContainer() {
           return (
             <div
               key={social.id}
-              className="overflow-hidden w-[150px] flex justify-center"
+              className="overflow-hidden w-[100px] md:w-[150px] flex justify-center"
             >
               <Link
                 href={social.link}
