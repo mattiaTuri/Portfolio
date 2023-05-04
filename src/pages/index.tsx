@@ -4,6 +4,7 @@ import Navbar from "@/components/core/navbar/Navbar";
 import Head from "next/head";
 import StartPage from "@/components/feature/StartPage";
 import Works from "@/components/feature/works/Works";
+import Contacts from "@/components/feature/contacts/Contacts";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <StartPage />
         <Works />
+        <Contacts />
       </main>
     </>
   );

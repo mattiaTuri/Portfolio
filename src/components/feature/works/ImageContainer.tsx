@@ -8,11 +8,13 @@ function ImageContainer({ project }: { project: Project }) {
   return (
     <div className="pt-20">
       <Link href={`works/${id}`} className="h-80 w-full block relative pt-10">
-        <div className="absolute w-full h-full flex flex-col justify-center items-center skew-y-[-5deg]">
-          <h3 className="text-2xl md:text-3xl lg:text-5xl">
+        <div className="absolute w-full h-full flex flex-col justify-center items-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl skew-y-[-5deg]">
             {title.toUpperCase()}
-          </h3>
-          <span className="text-base md:text-1xl lg:text-2xl">{subtitle}</span>
+          </h2>
+          <span className="text-sm md:text-base lg:text-2xl skew-y-[-5deg]">
+            {subtitle}
+          </span>
         </div>
         <div className="h-full overflow-hidden">
           <Image

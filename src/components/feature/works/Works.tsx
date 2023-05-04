@@ -6,8 +6,10 @@ function Works() {
   return (
     <Container>
       <div className="w-full p-8">
-        <div className="border-b border-[#faa916] max-w-max">
-          <h1>01 - WORKS</h1>
+        <div className="w-full flex justify-center">
+          <h1 className="border-b border-[#faa916] text-sm md:text-base">
+            01 - WORKS
+          </h1>
         </div>
         {projects.map((project) => {
           return <ImageContainer key={project.id} project={project} />;

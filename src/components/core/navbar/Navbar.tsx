@@ -1,6 +1,5 @@
 import HamburgerMenu from "./HamburgerMenu";
 import DesktopMenu from "./DesktopMenu";
-import Container from "@/components/shared/Container";
 
 function Navbar() {
   return (

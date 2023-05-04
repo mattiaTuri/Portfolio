@@ -9,28 +9,21 @@ function DesktopMenu() {
         <div className="overflow-hidden relative flex">
           <Link
             href="/"
-            className={`px-4 text-sm relative ${style.navLink} duration-300 hover:translate-y-full`}
+            className={`px-4 text-[#fbe094] text-sm relative ${style.navLink} duration-300 hover:translate-y-full`}
             data-link="HOME"
           >
             HOME
           </Link>
           <Link
-            href="/"
-            className={`px-4 text-sm  relative ${style.navLink} duration-300 hover:translate-y-full`}
+            href="#works"
+            className={`px-4 text-sm text-[#fbe094] relative ${style.navLink} duration-300 hover:translate-y-full`}
             data-link="WORKS"
           >
             WORKS
           </Link>
           <Link
-            href="/"
-            className={`px-4 text-sm  relative ${style.navLink} duration-300 hover:translate-y-full`}
-            data-link="ABOUT ME"
-          >
-            ABOUT ME
-          </Link>
-          <Link
-            href="/"
-            className={`px-4 text-sm  relative ${style.navLink} duration-300 hover:translate-y-full`}
+            href="#contacts"
+            className={`pl-4 text-sm text-[#fbe094] relative ${style.navLink} duration-300 hover:translate-y-full`}
             data-link="CONTACTS"
           >
             CONTACTS

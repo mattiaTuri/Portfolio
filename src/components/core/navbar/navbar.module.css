@@ -2,7 +2,7 @@
     content: attr(data-link);
     position: absolute;
     top:-100%;
-    color:white;
+    color:#faa916;
 }
 
 .activeMenu{

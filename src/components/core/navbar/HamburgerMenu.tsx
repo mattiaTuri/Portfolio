@@ -31,18 +31,19 @@ function HamburgerMenu() {
         </nav>
       </Container>
       <div
-        className={`absolute top-0 left-[-100%] w-screen h-screen text-[#C3A06A] flex flex-col bg-[#000000f1] justify-center items-center duration-500 ${
+        className={`absolute top-0 left-[-100%] w-screen h-screen text-[#C3A06A] flex flex-col bg-black justify-center items-center duration-500 ${
           openMenu && style.activeMenu
         }`}
       >
         <Link href="/" className="text-2xl" onClick={() => setOpenMenu(false)}>
           HOME
         </Link>
-        <Link href="/" className="text-2xl" onClick={() => setOpenMenu(false)}>
+        <Link
+          href="/"
+          className="text-2xl py-10"
+          onClick={() => setOpenMenu(false)}
+        >
           WORKS
-        </Link>
-        <Link href="/" className="text-2xl" onClick={() => setOpenMenu(false)}>
-          ABOUT ME
         </Link>
         <Link href="/" className="text-2xl" onClick={() => setOpenMenu(false)}>
           CONTACTS
