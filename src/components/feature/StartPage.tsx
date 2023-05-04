@@ -16,9 +16,9 @@ function StartPage() {
           </div>
           <div className="relative top-10 w-[50%] ">
             <p className="text-sm lg:text-base text-center">
-              I'm a software developer, based in Verona, Italy. I'm appassionate
-              about the front-end with a focus on the world of graphics and
-              animation
+              I&apos;m a software developer, based in Verona, Italy. I&apos;m
+              appassionate about the front-end with a focus on the world of
+              graphics and animation
             </p>
           </div>
         </div>
