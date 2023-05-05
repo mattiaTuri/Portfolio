@@ -29,11 +29,16 @@ body{
 
 span{
   color:#fbe094;
-  font-family: "Poppins-Bold";
+   font-family: "Poppins-Medium";
 }
 
 h1,h2,a{
   color: #faa916;
+  font-family: "Poppins-Black";
+}
+
+h3{
+  color: #fbe094;
   font-family: "Poppins-Black";
 }
 
