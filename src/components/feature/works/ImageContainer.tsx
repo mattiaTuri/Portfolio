@@ -35,9 +35,9 @@ function ImageContainer({ project }: { project: Project }) {
         </div>
         <div className="flex flex-col">
           <ol className="flex flex-col py-4">
-            {technology.map((elem) => {
+            {technology.map((elem, index) => {
               return (
-                <li>
+                <li key={index}>
                   <span className="text-sm">{elem}</span>
                 </li>
               );
