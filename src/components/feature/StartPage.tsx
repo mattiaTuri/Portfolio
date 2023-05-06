@@ -14,7 +14,7 @@ function StartPage() {
               DEVELOPER
             </h1>
           </div>
-          <div className="relative top-10 w-[50%] ">
+          <div className="relative top-10 lg:w-[50%]">
             <p className="text-sm lg:text-base text-center">
               I&apos;m a software developer, based in Verona, Italy. I&apos;m
               appassionate about the front-end with a focus on the world of

@@ -5,7 +5,12 @@ export interface Project{
     title:string;
     subtitle: string;
     description:string;
-    technology: string[];
+    technology: Technology[];
     img:StaticImageData;
     imgPosition: string;
+}
+
+interface Technology{
+    name:string;
+    icon:string;
 }

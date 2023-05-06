@@ -7,7 +7,7 @@ function Works() {
     <Container>
       <div className="w-full p-8">
         <div className="w-full flex justify-center">
-          <h1 className="border-b border-[#faa916] text-sm md:text-base">
+          <h1 className="border-b border-[#faa916] text-2xl md:text-3xl">
             01 - WORKS
           </h1>
         </div>

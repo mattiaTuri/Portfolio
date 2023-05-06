@@ -12,10 +12,22 @@ export const projects: Project[] = [
         subtitle: "A clone of the New York Times",
         description:"A single page web app for display articles organised by category. The main page reports the latest news.",
         technology: [
-            "React",
-            "MUI",
-            "React router",
-            "Axios with New York Times api"
+            {
+                name: "React",
+                icon: "mdi:react"
+            },
+            {
+                name: "MUI",
+                icon: "simple-icons:mui"
+            },
+            {
+                name: "React router",
+                icon: "simple-icons:reactrouter"
+            },
+            {
+                name: "Axios",
+                icon: "simple-icons:axios"
+            },
         ],
         img: worldjournal,
         imgPosition: "center"
@@ -26,10 +38,22 @@ export const projects: Project[] = [
         subtitle: "Cryptocurrency live market",
         description:"I created my own version of crypto currency web site inspired by site like CoinMarketCap and CoinGecko. Market live updates",
         technology: [
-            "React",
-            "MUI",
-            "React router",
-            "Axios with Coinmarket / CoinGecko api"
+            {
+                name: "React",
+                icon: "mdi:react"
+            },
+            {
+                name: "MUI",
+                icon: "simple-icons:mui"
+            },
+            {
+                name: "React router",
+                icon: "simple-icons:reactrouter"
+            },
+            {
+                name: "Axios",
+                icon: "simple-icons:axios"
+            },
         ],
         img: coinmarket,
         imgPosition: "center 30%"
@@ -40,13 +64,28 @@ export const projects: Project[] = [
         subtitle: "The universe of the most famous MOBA",
         description:"A single page web app that show champions and region of the League of Legends universe",
         technology: [
-            "Next.js",
-            "Tailwind css",
-            "i18next for translation (it, en)",
-            "Framer motion as animation library",
-            "Custom json data and translation"
+            {
+                name: "Next.js v.13",
+                icon: "teenyicons:nextjs-solid"
+            },
+            {
+                name: "Typescript",
+                icon: "mdi:language-typescript"
+            },
+            {
+                name: "Tailwind css",
+                icon: "mdi:tailwind"
+            },
+            {
+                name: "i18next",
+                icon: "simple-icons:i18next"
+            },
+            {
+                name: "Framer motion",
+                icon: "tabler:brand-framer-motion"
+            },
         ],
         img: leagueoflegends,
-        imgPosition: "center 20%"
+        imgPosition: "40% 20%"
     },
 ]

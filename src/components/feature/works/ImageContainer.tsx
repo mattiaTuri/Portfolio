@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Project } from "@/models/project";
 import { Icon } from "@iconify/react";
+import CustomButton from "@/components/shared/CustomButton";
 
 function ImageContainer({ project }: { project: Project }) {
   const { title, subtitle, description, technology, img, imgPosition } =
@@ -9,16 +10,19 @@ function ImageContainer({ project }: { project: Project }) {
 
   return (
     <div className="relative mt-20">
-      <Link href="" className="relative">
+      <div className="relative">
         <div className=" w-full block overflow-hidden relative">
-          <div className="h-full absolute lg:hover:scale-110 duration-300 ease-[cubic-bezier(0.25, 1, 0.5, 1)] z-10">
+          <Link
+            href=""
+            className="h-full absolute lg:hover:scale-110 duration-300 ease-[cubic-bezier(0.25, 1, 0.5, 1)] z-10"
+          >
             <Image
               src={img}
               alt=""
               style={{ objectPosition: imgPosition }}
-              className="h-full object-cover opacity-20"
+              className="h-full object-cover opacity-50 lg:opacity-20"
             />
-          </div>
+          </Link>
           <div className="hidden absolute w-full h-full lg:flex flex-col justify-center items-center">
             <h2 className="text-2xl md:text-3xl lg:text-4xl skew-y-[-5deg]">
               {title.toUpperCase()}
@@ -39,24 +43,29 @@ function ImageContainer({ project }: { project: Project }) {
               <ol className="flex flex-col py-4">
                 {technology.map((elem, index) => {
                   return (
-                    <li key={index}>
-                      <span className="text-sm">{elem}</span>
+                    <li key={index} className="flex items-center py-1">
+                      <Icon
+                        icon={elem.icon}
+                        className="h-8 w-8 mr-4"
+                        color="#fbe094"
+                      />
+                      <span className="text-sm">{elem.name}</span>
                     </li>
                   );
                 })}
               </ol>
               <div className="py-4">
-                <button className="text-[#fbe094] hover:text-[#faa916] duration-300">
-                  <Icon icon="akar-icons:github-fill" className="h-8 w-8" />
-                </button>
-                <button className="text-[#fbe094] hover:text-[#faa916] duration-300 pl-4">
-                  <Icon icon="pajamas:live-preview" className="h-8 w-8" />
-                </button>
+                <div className="py-2">
+                  <CustomButton href="" title="GIT HUB" />
+                </div>
+                <div className="py-2">
+                  <CustomButton href="" title="VIEW PROJECT" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 }
