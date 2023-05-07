@@ -1,48 +1,28 @@
-.navLink::before{
-    content: attr(data-link);
-    position: absolute;
-    top:-100%;
-    color:#faa916;
+.navLink::before {
+  content: attr(data-link);
+  position: absolute;
+  top: -100%;
+  color: #faa916;
 }
 
-.activeMenu{
-    left:0 !important;
+.activeMenu {
+  left: 0 !important;
 }
 
-.button{
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    transition: 0.8s ease;
-    color:white;
-    z-index:10;
+.buttonAnim {
+  transform: rotate(180deg);
 }
 
-.line{
-    height: 2px;
-    width: 25px;
-    background-color: #faa916;
-    transition: 0.3s ease;
-    transition-delay: 0.1s;
+.firstLineAnim {
+  transform-origin: bottom right;
+  transform: rotate(-45deg);
 }
 
-.buttonAnim{
-    transform: rotate(180deg);
+.secondLineAnim {
+  opacity: 0;
 }
 
-.firstLineAnim{
-    transform-origin: bottom right;
-    transform: rotate(-45deg);
-}
-
-.secondLineAnim{
-    opacity: 0;
-}
-
-.thirdLineAnim{
-    transform-origin: top right;
-    transform: rotate(45deg);
-    
+.thirdLineAnim {
+  transform-origin: top right;
+  transform: rotate(45deg);
 }

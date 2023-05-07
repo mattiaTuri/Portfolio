@@ -7,7 +7,7 @@ function Contacts() {
     <Container>
       <div className="w-full flex flex-col items-center p-8 pt-40">
         <div className="border-b border-[#faa916]">
-          <h1 className="text-2xl md:text-3xl">03 - CONTACTS</h1>
+          <h1 className="text-2xl md:text-3xl">02 - CONTACTS</h1>
         </div>
         <div className="pt-20 flex flex-col items-center">
           <span className="text-sm md:text-base">E-mail</span>

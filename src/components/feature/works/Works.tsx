@@ -8,7 +8,7 @@ function Works() {
       <div className="w-full p-8">
         <div className="w-full flex justify-center">
           <h1 className="border-b border-[#faa916] text-2xl md:text-3xl">
-            01 - WORKS
+            01 - PROJECTS
           </h1>
         </div>
         {projects.map((project) => {

@@ -5,7 +5,8 @@ import style from "./navbar.module.css";
 function DesktopMenu() {
   return (
     <Container>
-      <nav className="hidden w-full md:flex md:items-center md:justify-end p-8 ">
+      <nav className="hidden w-full md:flex md:items-center md:justify-between p-8 ">
+        <Link href="/">TM</Link>
         <div className="overflow-hidden relative flex">
           <Link
             href="/"
@@ -17,9 +18,9 @@ function DesktopMenu() {
           <Link
             href="#works"
             className={`px-4 text-sm text-[#fbe094] relative ${style.navLink} duration-300 hover:translate-y-full`}
-            data-link="WORKS"
+            data-link="PROJECTS"
           >
-            WORKS
+            PROJECTS
           </Link>
           <Link
             href="#contacts"

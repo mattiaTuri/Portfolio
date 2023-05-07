@@ -13,19 +13,28 @@ function HamburgerMenu() {
   return (
     <div className="md:hidden">
       <Container>
-        <nav className="flex p-8 justify-end w-full">
+        <nav className="flex p-8 justify-between w-full">
+          <Link href="/">TM</Link>
           <button
-            className={`${style.button} ${openMenu && style.buttonAnim}`}
+            className={`h-[20px] flex flex-col justify-between relative duration-700 ease text-white z-10 ${
+              openMenu && style.buttonAnim
+            }`}
             onClick={() => openHamburgerMenu()}
           >
             <span
-              className={`${style.line} ${openMenu && style.firstLineAnim}`}
+              className={`h-[2px] w-[25px] bg-[#faa916] duration-300 ease delay-100 ${
+                openMenu && style.firstLineAnim
+              }`}
             ></span>
             <span
-              className={`${style.line} ${openMenu && style.secondLineAnim}`}
+              className={`h-[2px] w-[25px] bg-[#faa916] duration-300 ease delay-100  ${
+                openMenu && style.secondLineAnim
+              }`}
             ></span>
             <span
-              className={`${style.line} ${openMenu && style.thirdLineAnim}`}
+              className={`h-[2px] w-[25px] bg-[#faa916] duration-300 ease delay-100  ${
+                openMenu && style.thirdLineAnim
+              }`}
             ></span>
           </button>
         </nav>
@@ -43,7 +52,7 @@ function HamburgerMenu() {
           className="text-2xl py-10"
           onClick={() => setOpenMenu(false)}
         >
-          WORKS
+          PROJECTS
         </Link>
         <Link href="/" className="text-2xl" onClick={() => setOpenMenu(false)}>
           CONTACTS
