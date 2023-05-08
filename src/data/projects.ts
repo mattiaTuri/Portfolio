@@ -11,6 +11,8 @@ export const projects: Project[] = [
         title: "World Jounal",
         subtitle: "A clone of the New York Times",
         description:"A single page web app for display articles organised by category. The main page reports the latest news.",
+        link_github:"https://github.com/mattiaTuri/Journal",
+        link_preview:"https://world-journal-react.netlify.app/",
         technology: [
             {
                 name: "React",
@@ -37,6 +39,8 @@ export const projects: Project[] = [
         title: "Coin market",
         subtitle: "Cryptocurrency live market",
         description:"I created my own version of crypto currency web site inspired by site like CoinMarketCap and CoinGecko. Market live updates",
+        link_github:"https://github.com/mattiaTuri/CoinMarket",
+        link_preview:"https://coinmarket-cap.netlify.app/",
         technology: [
             {
                 name: "React",
@@ -63,6 +67,8 @@ export const projects: Project[] = [
         title: "League of legends",
         subtitle: "The universe of the most famous MOBA",
         description:"A single page web app that show champions and region of the League of Legends universe",
+        link_github:"https://github.com/mattiaTuri/LeagueOfLegends",
+        link_preview:"https://league-of-legends-rho.vercel.app/",
         technology: [
             {
                 name: "Next.js v.13",
@@ -83,6 +89,11 @@ export const projects: Project[] = [
             {
                 name: "Framer motion",
                 icon: "tabler:brand-framer-motion"
+            },
+
+            {
+                name: "Swiper.js",
+                icon: "simple-icons:swiper"
             },
         ],
         img: leagueoflegends,

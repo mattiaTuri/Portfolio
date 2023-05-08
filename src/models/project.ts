@@ -5,6 +5,8 @@ export interface Project{
     title:string;
     subtitle: string;
     description:string;
+    link_github:string;
+    link_preview:string;
     technology: Technology[];
     img:StaticImageData;
     imgPosition: string;

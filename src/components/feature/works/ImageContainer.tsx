@@ -5,16 +5,25 @@ import { Icon } from "@iconify/react";
 import CustomButton from "@/components/shared/CustomButton";
 
 function ImageContainer({ project }: { project: Project }) {
-  const { id, title, subtitle, description, technology, img, imgPosition } =
-    project;
+  const {
+    title,
+    subtitle,
+    link_github,
+    link_preview,
+    description,
+    technology,
+    img,
+    imgPosition,
+  } = project;
 
   return (
     <div className="relative mt-20">
       <div className="relative">
-        <div className=" w-full block overflow-hidden relative">
+        <div className="w-full block overflow-hidden relative">
           <Link
-            href={`works/${id}`}
+            href={link_preview}
             className="h-full absolute lg:hover:scale-110 duration-300 ease-[cubic-bezier(0.25, 1, 0.5, 1)]"
+            target="_blank"
           >
             <Image
               src={img}
@@ -31,7 +40,7 @@ function ImageContainer({ project }: { project: Project }) {
               </h3>
             </div>
           </Link>
-          <div className="p-10 relative flex flex-col bg-[#0a0903b4] h-full lg:w-80 z-20">
+          <div className="p-8 relative flex flex-col bg-[#0a0903b4] h-full lg:w-80 z-20">
             <div className="lg:hidden">
               <h2 className="text-base">{title.toUpperCase()}</h2>
               <h3 className="text-sm md:text-base">{subtitle}</h3>
@@ -46,7 +55,7 @@ function ImageContainer({ project }: { project: Project }) {
                     <li key={index} className="flex items-center py-1">
                       <Icon
                         icon={elem.icon}
-                        className="h-8 w-8 mr-4"
+                        className="h-6 w-6 mr-4"
                         color="#fbe094"
                       />
                       <span className="text-sm">{elem.name}</span>
@@ -55,8 +64,17 @@ function ImageContainer({ project }: { project: Project }) {
                 })}
               </ol>
             </div>
-            <div className="py-4 w-full flex">
-              <CustomButton href="" title="VIEW PROJECT" />
+            <div className="py-4 w-full flex gap-5 lg:flex-col">
+              <CustomButton
+                href={link_github}
+                title="GITHUB"
+                icon="akar-icons:github-fill"
+              />
+              <CustomButton
+                href={link_preview}
+                title="VIEW"
+                icon="tabler:external-link"
+              />
             </div>
           </div>
         </div>

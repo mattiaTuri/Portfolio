@@ -27,11 +27,6 @@ body{
   background-color:#0a0903;
 }
 
-span{
-  color:#fbe094;
-   font-family: "Poppins-Medium";
-}
-
 h1,h2,a{
   color: #faa916;
   font-family: "Poppins-Black";
@@ -42,7 +37,8 @@ h3{
   font-family: "Poppins-Black";
 }
 
-p{
+p,span{
  font-family: "Poppins-Medium";
  color:#fbe094;
 }
+

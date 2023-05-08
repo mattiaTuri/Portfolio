@@ -1,5 +1,0 @@
-.socialAnim::before{
-    content: attr(data-link);
-    position: absolute;
-    top: -100%;
-}

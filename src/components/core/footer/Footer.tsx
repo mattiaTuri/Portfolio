@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="text-center pt-20 ">
-      <span className="text-sm">© 2022 Turina Mattia. All rights reserved</span>
+      <span className="text-sm">© 2023 Turina Mattia. All rights reserved</span>
     </footer>
   );
 }
