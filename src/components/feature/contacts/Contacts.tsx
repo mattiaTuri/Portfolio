@@ -16,7 +16,11 @@ function Contacts() {
           <span className="text-sm md:text-base pb-4">
             Feel free to contact me
           </span>
-          <CustomButton href="" title="GET CV" icon="ph:read-cv-logo-bold" />
+          <CustomButton
+            href="/assets/pdf/TurinaMattiaCV.pdf"
+            title="GET CV"
+            icon="ph:read-cv-logo-bold"
+          />
         </div>
         <div className="pt-20 flex flex-col items-center">
           <span className="text-sm md:text-base">E-mail</span>

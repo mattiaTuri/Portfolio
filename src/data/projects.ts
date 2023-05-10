@@ -68,7 +68,7 @@ export const projects: Project[] = [
         subtitle: "The universe of the most famous MOBA",
         description:"A single page web app that show champions and region of the League of Legends universe",
         link_github:"https://github.com/mattiaTuri/LeagueOfLegends",
-        link_preview:"https://league-of-legends-rho.vercel.app/",
+        link_preview:"https://league-of-legends-universe.vercel.app",
         technology: [
             {
                 name: "Next.js v.13",
