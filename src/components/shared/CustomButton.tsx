@@ -9,7 +9,7 @@ interface ButtonProps {
 
 function CustomButton({ href, title, icon }: ButtonProps) {
   return (
-    <button className="border border-[#faa916] p-4 lg:hover:scale-90 duration-300 ease-in-out w-32 lg:w-full">
+    <button className="border border-[#faa916] p-4 lg:hover:scale-90 duration-300 ease-in-out w-full">
       <Link
         href={href}
         target="_blank"

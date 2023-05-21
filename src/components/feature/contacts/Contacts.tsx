@@ -1,6 +1,7 @@
 import Container from "@/components/shared/Container";
 import SocialContainer from "./SocialContainer";
 import CustomButton from "@/components/shared/CustomButton";
+import { social } from "../../../data/social";
 
 function Contacts() {
   return (
@@ -12,7 +13,7 @@ function Contacts() {
         <div className="border-b border-[#faa916]">
           <h1 className="text-2xl md:text-3xl">CONTACTS</h1>
         </div>
-        <div className="pt-20 flex flex-col">
+        <div className="pt-20 flex flex-col items-center">
           <span className="text-sm md:text-base pb-4">
             Feel free to contact me
           </span>
@@ -28,7 +29,7 @@ function Contacts() {
             turina.mattia@gmail.com
           </h2>
         </div>
-        <SocialContainer />
+        <SocialContainer social={social} />
       </div>
     </Container>
   );
