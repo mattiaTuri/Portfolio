@@ -16,7 +16,7 @@ function SocialContainer({ social }: { social: Social[] }) {
               href={elem.link}
               aria-label={elem.id}
               target="_blank"
-              className={`w-[100px] md:w-[150px] h-full flex justify-center relative duration-300 lg:hover:translate-y-full lg:before:content-['${elem.name}'] lg:before:absolute before:top-[-100%]`}
+              className="w-[100px] md:w-[150px] h-full flex justify-center relative duration-300 lg:hover:text-[#fbe094]"
             >
               <Icon icon={elem.classIcon} className="h-8 w-full" />
             </Link>
