@@ -13,7 +13,9 @@ function HamburgerMenu() {
     <div className="md:hidden">
       <Container>
         <nav className="flex p-8 justify-between w-full">
-          <Link href="/">TM</Link>
+          <Link href="#home" scroll={false}>
+            TM
+          </Link>
           <button
             className={`h-[20px] flex flex-col justify-between relative duration-700 ease z-10 ${
               openMenu && "rotate-180"
@@ -43,13 +45,19 @@ function HamburgerMenu() {
           openMenu ? "left-0" : "left-[-100%]"
         }`}
       >
-        <Link href="/" className="text-2xl" onClick={() => setOpenMenu(false)}>
+        <Link
+          href="#home"
+          className="text-2xl"
+          onClick={() => setOpenMenu(false)}
+          scroll={false}
+        >
           HOME
         </Link>
         <Link
           href="#projects"
           className="text-2xl py-10"
           onClick={() => setOpenMenu(false)}
+          scroll={false}
         >
           PROJECTS
         </Link>
@@ -57,6 +65,7 @@ function HamburgerMenu() {
           href="#contacts"
           className="text-2xl"
           onClick={() => setOpenMenu(false)}
+          scroll={false}
         >
           CONTACTS
         </Link>

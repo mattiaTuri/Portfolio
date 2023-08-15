@@ -15,7 +15,7 @@ export const projects: Project[] = [
         link_preview:"https://world-journal-react.netlify.app/",
         technology: [
             {
-                name: "React",
+                name: "React v.17",
                 icon: "mdi:react"
             },
             {
@@ -34,34 +34,6 @@ export const projects: Project[] = [
         img: worldjournal,
         imgPosition: "center"
     },
-    // {
-    //     id: "coin-market",
-    //     title: "Coin market",
-    //     subtitle: "Cryptocurrency live market",
-    //     description:"I created my own version of crypto currency web site inspired by site like CoinMarketCap and CoinGecko. Market live updates",
-    //     link_github:"https://github.com/mattiaTuri/CoinMarket",
-    //     link_preview:"https://coinmarket-cap.netlify.app/",
-    //     technology: [
-    //         {
-    //             name: "React",
-    //             icon: "mdi:react"
-    //         },
-    //         {
-    //             name: "MUI",
-    //             icon: "simple-icons:mui"
-    //         },
-    //         {
-    //             name: "React router",
-    //             icon: "simple-icons:reactrouter"
-    //         },
-    //         {
-    //             name: "Axios",
-    //             icon: "simple-icons:axios"
-    //         },
-    //     ],
-    //     img: coinmarket,
-    //     imgPosition: "center 30%"
-    // },
     {
         id: "league-of-legends",
         title: "League of legends",

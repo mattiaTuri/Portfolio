@@ -2,7 +2,7 @@ import Container from "../shared/Container";
 
 function StartPage() {
   return (
-    <div className="h-screen">
+    <div id="home" className="h-screen">
       <Container>
         <div className="h-full w-full p-8 flex flex-col justify-center items-center relative">
           <div className="flex flex-col items-center">
