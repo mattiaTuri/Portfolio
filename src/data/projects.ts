@@ -1,8 +1,7 @@
 import { Project } from "@/models/project";
-
 import leagueoflegends from "../assets/images/leagueoflegends.jpg"
-import coinmarket from "../assets/images/coinmarket.jpg"
 import worldjournal from "../assets/images/worldjournal.png"
+import dashboard from "../assets/images/dashboard.jpg"
 
 
 export const projects: Project[] = [
@@ -70,5 +69,46 @@ export const projects: Project[] = [
         ],
         img: leagueoflegends,
         imgPosition: "40% 20%"
+    },
+    {
+        id: "storage",
+        title: "Storage",
+        subtitle: "Personal dashboard",
+        description:"Dashboard to catalogue books and resources so you can keep track of what you read. It includes a summary page with charts and a page on system/user options.",
+        link_github:"https://github.com/mattiaTuri/Storage",
+        link_preview:"https://storage-dun.vercel.app/",
+        technology: [
+            {
+                name: "React v.18.2",
+                icon: "mdi:react"
+            },
+            {
+                name: "Typescript",
+                icon: "mdi:language-typescript"
+            },
+            {
+                name: "MUI",
+                icon: "simple-icons:mui"
+            },
+            {
+                name: "Tailwind css",
+                icon: "mdi:tailwind"
+            },
+            {
+                name: "React router",
+                icon: "simple-icons:reactrouter"
+            },
+            {
+                name: "Apache echarts",
+                icon: "simple-icons:apacheecharts"
+            },
+            {
+                name: "Firebase",
+                icon: "mdi:firebase"
+            },
+
+        ],
+        img: dashboard,
+        imgPosition: "center"
     },
 ]
