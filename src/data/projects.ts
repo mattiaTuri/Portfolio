@@ -1,7 +1,7 @@
 import { Project } from "@/models/project";
 import leagueoflegends from "../assets/images/leagueoflegends.jpg"
 import worldjournal from "../assets/images/worldjournal.png"
-import dashboard from "../assets/images/dashboard.jpg"
+import dashboard from "../assets/images/dashboard.png"
 
 
 export const projects: Project[] = [
@@ -9,7 +9,7 @@ export const projects: Project[] = [
         id: "journal",
         title: "World Jounal",
         subtitle: "A clone of the New York Times",
-        description:"A single page web app for display articles organised by category. The main page reports the latest news.",
+        description:"The webpage provides up-to-date newspaper news on various topics. The main page of every sections  provides a quick overview of the news, with captivating headlines and brief excerpts that capture the essence of each article. Users can click on articles of their interest to read the entire content and stay informed about the latest updates.",
         link_github:"https://github.com/mattiaTuri/Journal",
         link_preview:"https://world-journal-react.netlify.app/",
         technology: [
@@ -37,7 +37,7 @@ export const projects: Project[] = [
         id: "league-of-legends",
         title: "League of legends",
         subtitle: "The universe of the most famous MOBA",
-        description:"A single page web app that show champions and region of the League of Legends universe",
+        description:"The webpage is a comprehensive encyclopedia about the League of Legends universe, featuring details about champions and regions. It provides in-depth information about playable characters such as their available skins, story and others.",
         link_github:"https://github.com/mattiaTuri/LeagueOfLegends",
         link_preview:"https://league-of-legends-universe.vercel.app",
         technology: [
@@ -74,7 +74,7 @@ export const projects: Project[] = [
         id: "storage",
         title: "Storage",
         subtitle: "Personal dashboard",
-        description:"Dashboard to catalogue books and resources so you can keep track of what you read. It includes a summary page with charts and a page on system/user options.",
+        description:"The dashboard serves as a manager for managing books and resources to be viewed, with the option to add new items, remove them and mark them as read/viewed. It provides an overview with charts and data collection, and a system page.",
         link_github:"https://github.com/mattiaTuri/Storage",
         link_preview:"https://storage-dun.vercel.app/",
         technology: [
@@ -99,6 +99,10 @@ export const projects: Project[] = [
                 icon: "simple-icons:reactrouter"
             },
             {
+                name: "Redux",
+                icon: "akar-icons:redux-fill"
+            },
+            {
                 name: "Apache echarts",
                 icon: "simple-icons:apacheecharts"
             },
@@ -112,3 +116,4 @@ export const projects: Project[] = [
         imgPosition: "center"
     },
 ]
+
