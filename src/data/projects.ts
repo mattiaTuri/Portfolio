@@ -9,7 +9,7 @@ export const projects: Project[] = [
         id: "sorting-algorithms",
         title: "Sorting Algorithms",
         subtitle: "Visualizer of the main sorting algorithms",
-        description:"Visualizer of the main sorting algorithms: bubble, insertion, selection, merge, quick. Logic and animations made with Javascript. On the page is include a toolbar which is possible increase and decrease the speed and also change the length of array.",
+        description:"Visualizer of the main sorting algorithms: bubble, insertion, selection and counting. Logic and animations made with Javascript. On the page is include a toolbar which is possible increase and decrease the speed and also change the length of array.",
         link_github:"https://github.com/mattiaTuri/SortingAlgorithms",
         link_preview:"https://sorting-algorithms-five.vercel.app/",
         technology: [
@@ -41,7 +41,7 @@ export const projects: Project[] = [
         id: "storage",
         title: "Storage",
         subtitle: "Personal dashboard",
-        description:"The dashboard serves as a manager for managing books and resources to be viewed, with the option to add new items, remove them and mark them as read/viewed. It provides an overview with charts and data collection, and a system page.",
+        description:"This projects serves as a manager for managing books and resources to be viewed, with the option to add new items, remove them and mark them as read/viewed. It provides an overview with charts and data collection, and a system page.",
         link_github:"https://github.com/mattiaTuri/Storage",
         link_preview:"https://storage-dun.vercel.app/",
         technology: [
@@ -123,7 +123,7 @@ export const projects: Project[] = [
         id: "journal",
         title: "World Jounal",
         subtitle: "A clone of the New York Times",
-        description:"The webpage provides up-to-date newspaper news on various topics. The main page of every sections  provides a quick overview of the news, with captivating headlines and brief excerpts that capture the essence of each article. Users can click on articles of their interest to read the entire content and stay informed about the latest updates.",
+        description:"The web page provides up-to-date newspaper news on various topics. The main page of every sections  provides a quick overview of the news, with captivating headlines and brief excerpts that capture the essence of each article. Users can click on articles of their interest to read the entire content and stay informed about the latest updates.",
         link_github:"https://github.com/mattiaTuri/Journal",
         link_preview:"https://world-journal-react.netlify.app/",
         technology: [
